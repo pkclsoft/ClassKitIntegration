@@ -14,6 +14,9 @@
 		D035D6F420BA551800350B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D035D6F220BA551800350B16 /* LaunchScreen.storyboard */; };
 		D035D6F720BA551800350B16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D035D6F620BA551800350B16 /* main.m */; };
 		D035D70120BA551800350B16 /* ClassKitIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D035D70020BA551800350B16 /* ClassKitIntegrationTests.m */; };
+		D035D71020BA556600350B16 /* LessonDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D035D70E20BA556500350B16 /* LessonDatabase.m */; };
+		D041723720BCAFBD00D3CA9D /* PlayerGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D041723620BCAFBD00D3CA9D /* PlayerGame.m */; };
+		D041723920BCB09E00D3CA9D /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = D041723820BCB09E00D3CA9D /* Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		D035D6FC20BA551800350B16 /* ClassKitIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassKitIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D035D70020BA551800350B16 /* ClassKitIntegrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassKitIntegrationTests.m; sourceTree = "<group>"; };
 		D035D70220BA551800350B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D035D70C20BA556500350B16 /* LessonDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonDatabase.h; sourceTree = "<group>"; };
+		D035D70E20BA556500350B16 /* LessonDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonDatabase.m; sourceTree = "<group>"; };
+		D035D71520BBA74600350B16 /* PlayerGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerGame.h; sourceTree = "<group>"; };
+		D035D71620BBA84300350B16 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		D041723620BCAFBD00D3CA9D /* PlayerGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerGame.m; sourceTree = "<group>"; };
+		D041723820BCB09E00D3CA9D /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,11 @@
 		D035D6E620BA551500350B16 /* ClassKitIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				D035D71520BBA74600350B16 /* PlayerGame.h */,
+				D041723620BCAFBD00D3CA9D /* PlayerGame.m */,
+				D035D71620BBA84300350B16 /* Question.h */,
+				D041723820BCB09E00D3CA9D /* Question.m */,
+				D035D70B20BA556500350B16 /* ClassKit Support */,
 				D035D6E720BA551500350B16 /* AppDelegate.h */,
 				D035D6E820BA551500350B16 /* AppDelegate.m */,
 				D035D6EA20BA551500350B16 /* ViewController.h */,
@@ -101,6 +115,15 @@
 				D035D70220BA551800350B16 /* Info.plist */,
 			);
 			path = ClassKitIntegrationTests;
+			sourceTree = "<group>";
+		};
+		D035D70B20BA556500350B16 /* ClassKit Support */ = {
+			isa = PBXGroup;
+			children = (
+				D035D70C20BA556500350B16 /* LessonDatabase.h */,
+				D035D70E20BA556500350B16 /* LessonDatabase.m */,
+			);
+			path = "ClassKit Support";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D035D71020BA556600350B16 /* LessonDatabase.m in Sources */,
 				D035D6EC20BA551500350B16 /* ViewController.m in Sources */,
 				D035D6F720BA551800350B16 /* main.m in Sources */,
+				D041723920BCB09E00D3CA9D /* Question.m in Sources */,
+				D041723720BCAFBD00D3CA9D /* PlayerGame.m in Sources */,
 				D035D6E920BA551500350B16 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +396,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pkclsoft.ClassKitIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -387,7 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pkclsoft.ClassKitIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
